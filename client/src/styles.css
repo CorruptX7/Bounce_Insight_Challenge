@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #333;
+  color: #f9f9f9;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.loading {
+  font-weight: 700;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  padding: 20px 10%;
+}
+
+.form {
+  text-align: center;
+}
+
+.inputContainer {
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.icon {
+  color: #a8a7a7;
+  margin-left: 20px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+.input {
+  border-radius: 2px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  height: 7.5vh;
+  padding: 16px 50px;
+  width: 45%;
+}
+
+::placeholder {
+  color: #909090;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.infoLine {
+  border-bottom: 2px solid #f9f9f9;
+  margin: 0 auto;
+  width: 15%;
+}
+
+.informationContainer {
+  padding: 30px 20px;
+}
+
+.title {
+  font-weight: 700;
+  padding: 20px 10px 10px;
+}
+
+.countryContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+.countryFlag {
+  /* width: 5%; */
+  height: auto;
+  max-width: 40px;
+}
+
+.drawline {
+  border-bottom: 1px solid #f9f9f9;
+  margin: 0 auto;
+  padding: 10px 1px;
+}
+
+.infoContainer {
+  padding: 10px 10px;
+}
+
+.mapContainer {
+  height: 60vh;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.errorContainer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.error {
+  background-color: #f9f9f9;
+  color: red;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+}
+
+/* MOBILE */
+@media screen and (max-width: 800px) {
+  .input {
+    width: 90%;
+  }
+
+  .infoLine {
+    border-bottom: 2px solid #f9f9f9;
+    margin: 0 auto;
+    width: 55%;
+  }
+
+  .mapContainer {
+    height: 40vh;
+  }
+}
